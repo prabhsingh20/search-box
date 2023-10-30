@@ -1,0 +1,153 @@
+/* 1344 */
+@media (max-width: 84em) {
+  .timer {
+    font-size: 1rem;
+  }
+  .links {
+    column-gap: 2rem;
+  }
+}
+
+/* 1200 */
+@media (max-width: 75em) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    grid-template-columns: 24% 53% 18%;
+    gap: 5rem;
+  }
+  .timer {
+    padding-bottom: 4.5rem;
+  }
+  #noteList li {
+    margin-top: 0rem;
+  }
+  .countDown {
+    font-size: 1.3rem;
+  }
+  .links {
+    margin-top: 5rem;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 3rem;
+  }
+}
+
+/* 983 */
+@media (max-width: 61em) {
+  .container {
+    grid-template-columns: 30% 60%;
+    column-gap: 8rem;
+    row-gap: 0rem;
+  }
+  .midContainer {
+    grid-row: span 2;
+  }
+
+  .countDown {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 6.5rem;
+  }
+  .bestbuy {
+    width: 6.5rem;
+  }
+  .links {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+  }
+  .time {
+    font-size: 2.3rem;
+  }
+  .clock {
+    font-size: 2rem;
+  }
+}
+
+/* 704 */
+@media (max-width: 44em) {
+  html {
+    font-size: 45%;
+  }
+  .container {
+    grid-template-columns: 40% 50%;
+    column-gap: 6rem;
+  }
+  .countDown {
+    font-size: 1.5rem;
+  }
+  .notes {
+    max-height: 27rem;
+  }
+  .timer h1 {
+    font-size: 2.3rem;
+  }
+  .timer label {
+    font-size: 1.5rem;
+  }
+  .links {
+    margin-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+  }
+  img {
+    width: 7rem;
+  }
+}
+
+/* 544 */
+@media (max-width: 34em) {
+  body {
+    margin: 0 auto;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+  .leftContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .notes {
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0;
+    max-height: 30rem;
+  }
+  #noteList li {
+    margin-top: 0rem;
+    gap: 8rem;
+  }
+  .btn {
+    padding: 1.2rem;
+    width: 7rem;
+  }
+  .timer {
+    align-items: center;
+    font-size: 1.2rem;
+    max-height: 34rem;
+  }
+  #finished {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+  .midContainer {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    align-items: center;
+  }
+  .search {
+    width: 55rem;
+  }
+  .links {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 3rem;
+  }
+  .rightContainer {
+    grid-row: 2;
+    margin: 0;
+  }
+}

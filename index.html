@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>"
+    />
+    <title>Search Box</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftContainer">
+        <div class="notes">
+          <h1>(+) Add Note</h1>
+          <input
+            id="inputText"
+            class="text"
+            type="text"
+            placeholder="Enter a new task"
+          />
+          <button id="addButton" class="btn">Add</button>
+          <ul id="noteList"></ul>
+        </div>
+
+        <div class="timer">
+          <h1>Countdown Timer</h1>
+          <label for="datepicker">Select Date and Time</label>
+          <input id="dateTime" class="date" type="datetime-local" />
+          <p id="finished"></p>
+          <div id="countDown" class="countDown">
+            <div id="extra">
+              <div>
+                <p id="days">00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="midContainer">
+        <input
+          class="search"
+          type="text"
+          placeholder="Search Google or type your URL"
+        />
+        <ul class="links">
+          <li>
+            <a href="https://www.wikipedia.org/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%206.svg"
+                alt="wikipedia"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%201.svg"
+                alt="instagram"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%202.svg"
+                alt="fackbook"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%204.svg"
+                alt="pinterest"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.netflix.com/" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%208.svg"
+                alt="netflix"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%205.svg"
+                alt="linkedin"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2011.svg"
+                alt="twitch"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.discord.com/" target="_blank"
+              ><img
+                class="discord"
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2012.svg"
+                alt="discord"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2013.svg"
+                alt="whatsapp"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.spotify.com/" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2014.svg"
+                alt="spotify"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.amazon.com//" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2015.svg"
+                alt="amazon"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.bestbuy.com/" target="_blank"
+              ><img
+                class="bestbuy"
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2016.svg"
+                alt="bestbuy"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.ebay.com/" target="_blank"
+              ><img
+                class="ebay"
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2017.svg"
+                alt="ebay"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.aliexpress.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2018.svg"
+                alt="aliexpress"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.booking.com/" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2019.svg"
+                alt="booking"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.airbnb.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2020.svg"
+                alt="airbnb"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img
+                src="	https://magical-kelpie-eacc69.netlify.app/images/assets/asset%200.svg"
+                alt="twitter"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+          <li>
+            <a href="https://www.roblox.com/" target="_blank"
+              ><img
+                src="https://magical-kelpie-eacc69.netlify.app/images/assets/asset%2010.svg"
+                alt="roblox"
+            /></a>
+            <button class="del-btn">&#x2715;</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rightContainer">
+        <h1 class="time">Time</h1>
+        <div class="clock">
+          <span id="hr">00</span>:<span id="mi">00</span>:<span id="sec"
+            >00</span
+          ><span id="session">AM</span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

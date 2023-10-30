@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 95.6vw;
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #eee;
+  background-image: url(/img/1.jpg);
+}
+
+.container {
+  margin: 6rem 0;
+  display: grid;
+  grid-template-columns: 20% 54% 20%;
+  gap: 6rem;
+}
+
+/*! LEFTCONTAINER */
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/** NOTES */
+
+.notes {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4rem 2rem 1.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  max-height: 25rem;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.notes h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.text {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
+}
+.btn {
+  padding: 1rem;
+  width: 5.2rem;
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+#noteList {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+#noteList li {
+  margin: 0.6rem 0 0.5rem;
+  padding: 1rem 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid white;
+}
+
+.delete {
+  padding: 0.5rem 0.8rem;
+  align-self: flex-start;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/** TIMER */
+
+.timer {
+  padding: 4.5rem 2rem 4rem;
+  max-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timer h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.timer label {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.date {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.countDown {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  display: none;
+}
+#extra {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.countDown div p {
+  font-size: 1.5rem;
+}
+
+#finished {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  display: none;
+  color: red;
+}
+
+/*! MIDCONTAINER */
+
+.search {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+}
+
+.links {
+  margin-top: 6rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1rem;
+  row-gap: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.links li {
+  transition: all 0.4s;
+}
+
+.links li .del-btn {
+  margin-left: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  background-color: red;
+  color: white;
+  position: absolute;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 1.2rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+.links li:hover {
+  transform: translateY(-1.2rem);
+}
+.links li:hover .del-btn {
+  visibility: visible;
+}
+
+img {
+  height: 7rem;
+}
+.discord {
+  width: 6.9rem;
+}
+.ebay {
+  width: 8rem;
+}
+.bestbuy {
+  width: 8rem;
+}
+
+/*! RIGTHCONTAINER */
+
+.rightContainer {
+  margin: 3rem 0;
+  padding: 4rem 0;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.time {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.clock {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
