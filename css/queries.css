@@ -24,7 +24,6 @@
     margin-bottom: 0.5rem;
   }
   .timer {
-    font-size: 1.2rem;
     padding-bottom: 4.5rem;
   }
   .timer label {
@@ -34,6 +33,10 @@
   #noteList li {
     margin-top: 0rem;
   }
+  #finished {
+    font-size: 2.2rem;
+  }
+
   .countDown {
     font-size: 1.3rem;
   }
@@ -91,7 +94,7 @@
     font-size: 45%;
   }
   .container {
-    grid-template-columns: 35% 58%;
+    grid-template-columns: 36% 58%;
     column-gap: 6rem;
   }
   .countDown {
@@ -103,7 +106,10 @@
   .timer h1 {
     font-size: 2.3rem;
   }
-
+  .btn {
+    width: 6rem;
+    padding: 1rem;
+  }
   .links {
     margin-top: 5rem;
     grid-template-columns: repeat(3, 1fr);
@@ -111,6 +117,23 @@
   }
   img {
     width: 7rem;
+  }
+  .clock span {
+    font-size: 2rem;
+  }
+  #noteList span,
+  button {
+    font-size: 2.2rem;
+  }
+  #extra {
+    gap: 1rem;
+  }
+  #extra div p,
+  span {
+    font-size: 1.5rem;
+  }
+  #finished {
+    font-size: 2.5rem;
   }
 }
 
@@ -133,7 +156,7 @@
     align-items: center;
     gap: 2rem;
     margin-top: 0;
-    max-height: 30rem;
+    max-height: 31rem;
   }
   #noteList li {
     margin-top: 0rem;
@@ -147,9 +170,13 @@
     align-items: center;
     font-size: 1.2rem;
     max-height: 34rem;
+    padding-top: 4rem;
+  }
+  .timer h1 {
+    font-size: 2.5rem;
   }
   #finished {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-top: 2rem;
   }
   .midContainer {
@@ -168,17 +195,63 @@
   .rightContainer {
     grid-row: 2;
   }
+  #noteList span {
+    font-size: 2.5rem;
+  }
+  .clock span {
+    font-size: 2rem;
+  }
+  #extra div p,
+  span {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 27rem) {
   .rightContainer {
     margin: 0 2rem;
   }
+  .time {
+    font-size: 3rem;
+  }
+  .clock {
+    font-size: 2.5rem;
+  }
   .leftContainer {
     grid-template-columns: 1fr;
     margin: 0 2rem;
   }
+  .notes {
+    gap: 1.5rem;
+  }
+  .notes h1 {
+    font-size: 3rem;
+  }
+  .text {
+    padding: 1.2rem 1rem;
+    width: 25rem;
+  }
+  .btn {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  #noteList span {
+    font-size: 2.7rem;
+  }
+  .timer h1 {
+    font-size: 3rem;
+  }
+  .timer label {
+    font-size: 2rem;
+  }
+  .date {
+    width: 25rem;
+  }
   .countDown div {
     font-size: 1.6rem;
+  }
+  #extra div p,
+  span {
+    font-size: 1.8rem;
   }
 }
