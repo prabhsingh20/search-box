@@ -123,7 +123,7 @@
   }
   #noteList span,
   button {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   #extra {
     gap: 1rem;
@@ -207,7 +207,8 @@
   }
 }
 
-@media (max-width: 27rem) {
+/* 464 */
+@media (max-width: 29rem) {
   .rightContainer {
     margin: 0 2rem;
   }
@@ -236,7 +237,10 @@
     font-size: 2rem;
   }
   #noteList span {
-    font-size: 2.7rem;
+    font-size: 2.9rem;
+  }
+  .delete {
+    font-size: 1.5rem;
   }
   .timer h1 {
     font-size: 3rem;
@@ -252,6 +256,12 @@
   }
   #extra div p,
   span {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  .clock span {
+    font-size: 2.5rem;
+  }
+  #finished {
+    font-size: 3rem;
   }
 }
