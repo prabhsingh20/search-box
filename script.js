@@ -3,7 +3,7 @@ const addButton = document.getElementById("addButton");
 const noteList = document.getElementById("noteList");
 const dateTime = document.getElementById("dateTime");
 
-//! NOTES /////////////////////////////
+//! ////////////// NOTES //////////////
 
 addButton.addEventListener("click", () => {
   const text = inputText.value.trim();
@@ -23,7 +23,7 @@ addButton.addEventListener("click", () => {
   inputText.value = "";
 });
 
-//! COUNTDOWN ///////////////////////////
+//! ////////////// COUNTDOWN //////////////
 
 function updateCountDown() {
   let countDownDate = new Date(dateTime.value).getTime();
@@ -56,7 +56,7 @@ function updateCountDown() {
 dateTime.addEventListener("change", updateCountDown),
   setInterval(updateCountDown, 1000);
 
-//! CLOCK////////////////////////
+//! ////////////// CLOCK //////////////
 
 function displayTime() {
   const dateTime = new Date();
